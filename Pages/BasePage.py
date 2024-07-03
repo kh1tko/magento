@@ -3,7 +3,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 
 class BasePage:
-    def __init__(self):
+    def __init__(self, driver):
         self.driver = driver
 
     def typeText_action(self, element, textType):
