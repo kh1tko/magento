@@ -2,7 +2,7 @@ from Pages.HomePage import Home
 from Configurations.TestData import TestData
 
 
-class Test_home:
+class Test_Home:
 
     def test_navigationToMenCategory(self, fixturesSetup):
         self.driver = fixturesSetup
