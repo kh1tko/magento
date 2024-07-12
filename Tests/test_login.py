@@ -7,7 +7,7 @@ from Configurations import readProperty
 
 
 class Test_Login:
-    def test_loginPageTitle(self, fixturesSetup, request):
+    def test_loginPageTitle(self, fixturesSetup):
         self.driver = fixturesSetup
         self.driver.get(readProperty.login_url)
         Home(self.driver).clickSignIn()
@@ -32,7 +32,7 @@ class Test_Login:
         lp.loginToApp(username=readProperty.username_qa, password=readProperty.password_qa)
         time.sleep(2)
         pageTitle = lp.get_pageTitle()
-        assert 'Home Page' in pageTitle, 'Login Failed'
+        assert 'My Account' in pageTitle, 'Login Failed'
 
     def test_invalid_Login(self, fixturesSetup):
         self.driver = fixturesSetup
