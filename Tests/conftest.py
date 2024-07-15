@@ -5,8 +5,9 @@ from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.firefox.service import Service as FirefoxService
 
+
 # you can add firefox in params
-@pytest.fixture(params=["chrome"], scope="class")
+@pytest.fixture(params=["chrome", "firefox"], scope="class")
 def fixturesSetup(request):
     driver = None
     if request.param == "chrome":
