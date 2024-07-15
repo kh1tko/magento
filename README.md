@@ -36,17 +36,17 @@ This project is designed for test automation using Selenium. It tests a speciall
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/yourproject.git
+   git clone https://github.com/kh1tko/magento.git
    cd yourproject
    
 2. Create a virtual environment and activate it:
-
-python -m venv venv
-source venv/bin/activate  # For Windows: venv\Scripts\activate
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # For Windows: venv\Scripts\activate
 
 3. Install dependencies:
-
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 
 ## Usage
 
