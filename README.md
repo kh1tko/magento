@@ -4,45 +4,31 @@ This project is designed for test automation using Selenium. It tests a speciall
 
 ## Project Structure
 
-POM/
-│
-├── Configurations/ # Configuration files
-│ ├── init.py
-│ ├── config.ini # Configuration file
-│ ├── readProperty.py # Script for reading properties from the configuration file
-│ └── TestData.py # Test data
-│
-├── Logs/ # Logs
-│ └── init.py
-│
-├── Pages/ # Application pages
-│ ├── init.py
-│ ├── BasePage.py # Base page class
-│ ├── HomePage.py # Home page
-│ ├── LoginPage.py # Login page
-│ └── MenPage.py # Men's section page
-│
-├── Reports/ # Reports
-│ └── init.py
-│
-├── Screenshots/ # Screenshots
-│ ├── init.py
-│ └── testLoginPage.png # Example screenshot of the login page
-│
-├── Tests/ # Tests
-│ ├── init.py
-│ ├── conftest.py # Test configuration
-│ ├── test_end2end.py # End-to-end test script
-│ ├── test_home.py # Home page test script
-│ ├── test_login.py # Login page test script
-│ └── test_login_2.py # Alternative login page test script
-│
-├── Utilities/ # Utilities
-│ ├── init.py
-│ └── LoggerInfo.py # Logging
-│
-├── requirements.txt # Project dependencies
-└── README.md # README file
+
+- `Configurations/`: Directory containing configuration files.
+  - `config.ini`: Configuration file.
+  - `readProperty.py`: Script for reading properties from the configuration file.
+  - `TestData.py`: Test data.
+- `Logs/`: Directory for logs.
+- `Pages/`: Directory containing classes for interacting with elements on pages.
+  - `BasePage.py`: Base page class.
+  - `HomePage.py`: Home page class.
+  - `LoginPage.py`: Login page class.
+  - `MenPage.py`: Men's section page class.
+- `Reports/`: Directory for reports.
+- `Screenshots/`: Directory for screenshots.
+  - `testLoginPage.png`: Example screenshot of the login page.
+- `Tests/`: Directory containing test scenarios.
+  - `conftest.py`: pytest configuration file with a fixture to initialize the browser.
+  - `test_end2end.py`: End-to-end test script.
+  - `test_home.py`: Home page test script.
+  - `test_login.py`: Login page test script.
+  - `test_login_2.py`: Alternative login page test script.
+- `Utilities/`: Directory for utility scripts.
+  - `LoggerInfo.py`: Logging utility.
+- `LICENSE`: License file
+- `requirements.txt`: Project dependencies.
+- `README.md`: README file.
 
 
 
